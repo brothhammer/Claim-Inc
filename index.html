@@ -8,10 +8,19 @@
   
   <title>Claim Inc. Home Page</title>
 
-  <!-- Bootstrap CDN -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-   <link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+
+  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   
@@ -19,58 +28,203 @@
 
 <body>
 
-
+<!--=====================   NAVBAR  =====================-->
   
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <div class="col-sm-3">
-      </div>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid home-menu">
       <div class="navbar-header">
-        <!-- <h1>Claim Inc.</h1> -->
-      <div class="text-center"><img class="profilePic" src="assets/images/claimIncLogo.png" title="CaimIncLogo" alt="Claim Inc." class="logo" width="500px" height="175px">
+
+       <!--  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button> -->
+
+        <a class="navbar-brand pure-menu-heading" href="index.html">Claim Inc.</a>
         </div>
 
-
-      </div>
-      <!-- <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Testimonials</a></li> -->
-        <!-- <li><a href="contact.html">Contact</a></li> -->
-      </ul>
+        <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
+          <ul class="pure-menu-list nav navbar-nav navbar-right ">
+            <li class="pure-menu-item"><button type="submit" class="pure-button" id="current-location" data-toggle="modal" data-target="#myModal">Claim Evaluation Chat!</button></li>
+          </ul>
+        <!-- </div> -->
+</div>
+       
     </div>
-  </nav>        
-             
- <div class="container-fluid">
-<div class="row">
-      <div class="col-md-8">
- <div class="page-header">
-          <h1>We are Texas Public Insurance Adjusters</h1>
-          <h3>Working to help protect property owners from the insurance companies</h3>
+    
+  
+  </nav>
+
+       <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">This is where the chat bot will go.</h4>
         </div>
-            <p>
-              Welcome! Thank you for visiting. If you are here you are likely dealing with one of the most traumatizing and emotionally draining experiences of modern life in dealing with significant damage to your property. Our goal is to even the playing field between the customers and the insurance companies. For too long insurance companies have had more information and resources available to settle claims in their favor.    
-            </p>
-            <p>
-              We work for commercial and residential property owners as a private consultant, specializing in the negotiation of insurance claims.
-            </p> 
-            <p>
-              Please allow us to prepare a full prospectus and financial analysis of your claim(s) to determine if our services could provide benefit. If we do not get clients paid above the original offer we do not get paid. 
-            </p>
+        <div class="modal-body">
+          <p>Implement chat feature here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
+      
+    </div>
+  </div>
 
-      <div class="col-md-4" align="center">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h1 class="panel-title">Contact us</h1>
-            </div>
+    <!--=====================   BEGIN IMG CAROUSEL   =====================-->
 
-            <div class="panel-body">
-            
-              <a href="mailto:stephensklein@gmail.com">
-              <img class="social" src="assets/images/email.png" alt="Claim Inc. Linked In" height="50" width="50">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" class="pure-g">
+    <div class="item active">
+      <img src="assets/images/threeHurricane.jpg" alt="Hurricane" style="width:50%;">
+    </div>
+
+    <div class="item">
+      <img src="assets/images/hail.jpg" alt="Hail" style="width:40%;">
+    </div>
+
+    <div class="item">
+      <img src="assets/images/fire.jpg" alt="Fire" style="width:100%;">
+    </div>
+
+    <div class="item">
+      <img src="assets/images/snow.jpg" alt="Snow" style="width:55%;">
+    </div>
+
+    <div class="item">
+      <img src="assets/images/tree.jpg" alt="Tree" style="width:50%;">
+    </div>
+
+    <div class="item">
+      <img src="assets/images/lightning.jpg" alt="Lightning" style="width:50%;">
+    </div>
+  </div>
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> 
+
+  <!--=====================   END IMG CAROUSEL   =====================--> 
+
+  <!--=====================   BEGIN MARKETING CONTENT   =====================-->      
+       
+  <div id="marketing" class="content-wrapper">
+    <div class="content">
+      <h2 class="content-head is-center">Resources to level the playing field.</h2>
+
+      <div class="pure-g">
+        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+
+          <h3 class="content-subhead">
+                    <i class="fa fa-rocket"></i>
+                    Find Great Adjustors
+                </h3>
+          <p>
+            Do not trust the company assigned adjuster to represent you. Find an insurance adjuster to work for your interests.
+          </p>
+        </div>
+        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+          <h3 class="content-subhead">
+                    <i class="fa fa-mobile"></i>
+                    Know They're Certified
+                </h3>
+          <p>
+            We only use insurance adjusters who are properly trained and licensead to do business in the State of the claim.
+          </p>
+        </div>
+        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+          <h3 class="content-subhead">
+                    <i class="fa fa-th-large"></i>
+                    It's Your Money
+                </h3>
+          <p>
+            Insurance companies pay out less than 20% of premiums on claims. Do not let them preassure you to settle for less than is desereved. 
+          </p>
+        </div>
+        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+          <h3 class="content-subhead">
+                    <i class="fa fa-check-square-o"></i>
+                    Be your own advocate
+                </h3>
+          <p>
+            Don't want to hire an adjuster but still want to access to the resources of the profesionals? Check out our ala cart services.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ribbon l-box-lrg pure-g">
+      <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+        <img width="300" alt="File Icons" class="pure-img-responsive" src="assets/images/fixedHouse.png">
+      </div>
+      <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+        <h2 class="content-head content-head-ribbon">You want to get your property fixed.</h2>
+
+        <p>
+          We hate the idea of big insurance companies offering settlements below what is needed to fix the damage. Our resources and expertise can make sure this does not happen to you.
+        </p>
+
+        <p>
+          Make no mistake especially in large claim events like a hurricante the insurance companies are trying to minimize exposure.
+        </p>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2 class="content-head is-center">free no risk review!</h2>
+
+      <div class="pure-g">
+        <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+          <div>
+          <label for="name">Your Name</label>
+          <input id="name" type="text" placeholder="Your Name">
+        </div>
+        <div>
+          <label for="email">Your Email</label>
+          <input id="email" type="email" placeholder="Your Email">
+        </div>
+        <div>
+          <label for="details">Briefly Describe your property damage</label>
+          <br>
+          <textarea id="message" name="message" placeholder="Write your message here.."></textarea>
+        </div>
+
+          <button type="submit" class="button-success pure-button" id="signup">Send</button>
+              
+        </div>
+
+        <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+          <h4>Contact Us</h4>
+          <p>
+            Send us a note about your property damage and one of our experienced adjusters will respond with the recomended next steps.
+          </p>
+              <a href="mailto:info@claiminc.com">
+              <img class="social" src="assets/images/email.png" alt="Claim Inc. Info E-mail" height="50" width="50">
               </a>
-
-              <!-- <div><a href="mailto:stephensklein@gmail.com" class="big-link">Send me a note</a></div> -->
 
               <a href="https://www.facebook.com/claiminc/?pnref=about.work">
               <img class="social" src="assets/images/facebook.jpeg" alt="Claim Inc. Facebook" height="50" width="50">
@@ -79,23 +233,24 @@
               <a href="https://twitter.com/Claim_Inc">
               <img class="social" src="assets/images/twitter.jpeg" alt="Cliam Inc. Twitter" height="50" width="50">
               </a>
-            </div>
-           
-          </div>
-           <br>
-           <br>
+
         </div>
       </div>
 
- 
-
     </div>
+  </div>
+
+    <!--=====================   END MARKETING CONTENT   =====================-->
+             
 
   <nav class="navbar navbar-default navbar-fixed-bottom">
     <div class="container">
     <div class="col-md-12">
       <div class="navbar-footer">
-       <footer class="text-center">&copy; 2017 Claim Inc.</footer>
+       <footer class="text-center">&copy; 2017 Claim Inc.</footer>             
+           
+          </div>
+
       </div>
     </div>
     </div>
